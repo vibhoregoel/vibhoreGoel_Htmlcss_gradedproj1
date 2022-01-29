@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+            header{
+            font-weight:bold;
+            font-size: 45px;
+            padding:10px;
+            text-align: center;
+            background-color:yellowgreen;
+            top:0%;
+            width:99%; 
+            margin-right: 30px;
+            }
+
+            footer{
+            font-weight:bold;
+            font-style:italic;
+            font-size: 30px;
+            padding:8px;
+            text-align: center;
+            background-color:yellow;
+            color: black;
+            width:99%;   
+            bottom:0%;
+            border:2px solid black;
+            }
+
+            nav{
+            background-color:black;
+            top:10px;
+            width:100%;
+            padding:1px
+            }
+
+            .list1{
+            list-style: none;
+            display:flex;
+            }
+            .list1 li{
+            padding:5px 40px;
+            position:relative;
+            }
+            .list1 li a{
+            text-decoration: none;
+            font-size: 20px;
+            color:white
+            }
+            .list1 li:nth-of-type(1):hover{
+            background-color: peru;
+            }
+            .list1 li:nth-of-type(2):hover{
+            background-color: red;
+            }
+            .list1 li:nth-of-type(3):hover{
+            background-color:purple;
+            }
+            .list1 li:nth-of-type(4):hover{
+            background-color:palevioletred;
+            }
+            .dropdown1{
+            display:none
+            }
+            .list1 li:hover .dropdown1{
+            display:block;
+            position:absolute;
+            left:0;
+            top:100;
+            background-color: chartreuse;
+            padding-right: 20px;
+            
+            }
+            .dropdown1 ul{
+            display:block;
+            margin:0%  
+            }
+            .dropdown1 ul li{
+            width:129px;
+            padding:5px;
+            list-style: none;
+            }
+            .dropdown2{
+            display:none
+            }   
+            .list1 li:hover .dropdown2{
+            display:block;
+            position:absolute;
+            left:0%;
+            top:100;
+            background-color: chartreuse;
+            padding-right: 20px;
+            
+            }
+            .dropdown2 ul{
+            display:block;
+            margin:0%;
+            }
+            .dropdown2 ul li{
+            width:106px;
+            padding:5px;
+            list-style: none;
+            }
+
+            #A{
+            border:2px solid steelblue;
+            width:99.55%;
+            height:435px;
+            margin:1.5px;
+            padding:3px;
+            animation-name:imagechange;
+            animation-duration: 40s;
+            animation-iteration-count: infinite;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            }
+            @keyframes imagechange{
+            0% {background-image: url('Images/Animation/ani1.jpg');}
+            20% {background-image: url('Images/Animation/ani2.png');}
+            40% {background-image: url('Images/Animation/ani3.jpg');}
+            60% {background-image: url('Images/Animation/ani4.jpg')}
+            80% {background-image: url('Images/Animation/ani5.jpg')}
+            100% {background-image: url('Images/Animation/ani1.jpg' )}
+            }
+
+            section{
+            border: 2px solid black;
+            height:1000px;
+            margin:1.5px;
+            width:100%;  
+            max-width: 100%;
+            height:auto
+            }
+
+            p{
+            width:18%;
+            background-color:lightgrey;
+            height: 320px;
+            display:inline-block;
+            padding: 20px;
+            margin:20px;
+            line-height: 20px;
+            color:blueviolet;
+            max-width: 100%;
+            height:auto
+            }
+            
+            button{
+            border-radius:10px;
+            width:220px; 
+            padding:5px; 
+            font-weight:bold;
+            color:black; 
+            font-size:17px;
+            max-width: 100%;
+            height:auto;
+            }
+            button:active{
+            background-color: rgb(250,234,230);
+            border-color: rgb(0,255,76);
+            }
+
+            .heading{
+                padding:10px; 
+                font-size:30px; 
+                text-decoration: underline;
+            }
+            img{
+                width:225px;
+                height:225px;
+                max-width: 100%;
+                height:auto
+            }
+            b{
+                color: black;
+                font-size:18px
+            }
+    </style>
+    </head>
+    <body>
+        <div>
+            <header>
+                Pharmacy
+            </header>
+            <nav>
+                <ul class="list1">
+                    <li> <a href="#"> Home</a> </li>
+                    <li><a href="#">Our Medicines</a>
+                        <div class="dropdown1">
+                            <ul>
+                                <li><a href="#"> Fever</a></li>
+                                <li><a href="#"> MusculePain</a></li>
+                                <li><a href="#"> Cold-Cough</a></li>
+                            </ul>
+                        </div> 
+                    </li>
+                    <li><a href="#">Health Care</a>
+                        <div class="dropdown2">
+                            <ul>
+                                <li><a href="#"> BabyCare</a></li>
+                                <li><a href="#"> SkinCare</a></li>
+                                <li><a href="#"> HomeCare</a></li>
+                                <li><a href="#"> PersonalCare</a></li>
+                                <li><a href="#"> PetCare</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li> <a href="labTestPage.html"> Lab Test</a></li>       
+                </ul>
+            </nav>
+            <div id="A"></div>
+            <section>
+                <h2 class="heading">Covid Care</h2>
+                <p>
+                    <b>Covid Test Kit</b>
+                    <img src="Images/Products/c1.jpg" /><br />
+                    Rs 40<br />
+                    Offer Rs. 30/-<br />
+                    <button>Add to Cart</button>
+                </p>
+                <p>
+                    <b >Covid Essentials</b>
+                    <img style="height:225px" src="Images/Products/c2.jpg" /><br />
+                    Rs 240<br />
+                    Offer Rs. 170/-<br />
+                    <button>Add to Cart</button>
+                </p>
+                <p>
+                    <b>Sanitizer Bottle</b>
+                    <img src="Images/Products/c3.jpg" /><br />
+                    Rs 99<br />
+                    Offer Rs. 87/-<br />
+                    <button>Add to Cart</button>
+                </p>
+                <p>
+                    <b>Mask</b>
+                    <img style="height:225px" src="Images/Products/c4.jpg" /><br />
+                    Rs 45<br />
+                    Offer Rs. 30/-<br />
+                    <button>Add to Cart</button>
+                </p>
+
+
+                <h2 class="heading">Diabetes Care</h2>
+                <p>
+                    <b>Metabolizer</b>
+                    <img src="Images/Products/d1.jpg" /><br />
+                    Rs 40<br />
+                    Offer Rs. 30/-<br />
+                    <button>Add to Cart</button>
+                </p>
+                <p>
+                    <b>Sugarfree</b>
+                    <img src="Images/Products/d2.jpg" /><br />
+                    Rs 40<br />
+                    Offer Rs. 30/-<br />
+                    <button>Add to Cart</button>
+                </p>
+                <p>
+                    <b>Toothpaste</b>
+                    <img src="Images/Products/d3.jpg" /><br />
+                    Rs 40<br />
+                    Offer Rs. 30/-<br />
+                    <button>Add to Cart</button>
+                </p>
+                <p>
+                    <b>Biscuit</b>
+                    <img src="Images/Products/d4.png" /><br />
+                    Rs 40<br />
+                    Offer Rs. 30/-<br />
+                    <button>Add to Cart</button>
+                </p>  
+            </section>
+            <footer>
+                @copyright.Only for demonstration purposes
+            </footer>
+        </div>
+    </body>
+</html>
